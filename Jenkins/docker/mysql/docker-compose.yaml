@@ -3,7 +3,7 @@ services:
   mysql:
     build:
       context: .
-      dockerfile: dockerfile
+      dockerfile: Dockerfile
     container_name: mysql
     restart: always
     ports:
