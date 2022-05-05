@@ -1,10 +1,10 @@
 pipeline {
   agent { label 'newslave' }
   stages {
-    stage ('revisar la version de docker') {
+    stage ('Mostrar ruta de trabajo') {
       steps {
         script {
-          sh "docker --version"
+          sh "pwd"
         }
       }
     }
