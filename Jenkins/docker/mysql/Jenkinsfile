@@ -11,7 +11,7 @@ pipeline {
     stage ('Ejecutar los contenedores') {
       steps {
         script {
-          sh "docker-compose -f Jenkins/docker/mysql/docker-compose.yaml up -d"
+          sh "docker compose -f Jenkins/docker/mysql/docker-compose.yaml up -d"
         }
       }
     }
