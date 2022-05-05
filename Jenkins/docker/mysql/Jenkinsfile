@@ -1,7 +1,7 @@
 pipeline {
   agent { label 'newslave' }
   stages {
-    stage () {
+    stage ('Mostrar ruta de trabajo') {
       steps {
         script {
           sh "pwd"
