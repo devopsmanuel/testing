@@ -1,14 +1,14 @@
 pipeline {
   agent { label 'newslave' }
   stages {
-    stage ('Mostrar ruta de trabajo') {
+    stage ('Ubicar los archivos para construir los contenedores') {
       steps {
         script {
-          sh "pwd"
+          sh "cd Jenkins/docker/mysql"
         }
       }
     }
-    stage ('listar archivos') {
+    stage ('Mostrar archivos') {
       steps {
         script {
           sh "ls"
