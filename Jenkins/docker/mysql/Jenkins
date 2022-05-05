@@ -1,0 +1,12 @@
+pipeline {
+  agent { label 'newslave' }
+  stages {
+    stage () {
+      steps {
+        script {
+          sh "pwd"
+        }
+      }
+    }
+  }
+}
