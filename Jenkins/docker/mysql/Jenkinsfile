@@ -8,10 +8,10 @@ pipeline {
         }
       }
     }
-    stage ('Mostrar archivos') {
+    stage ('Ejecutar los contenedores') {
       steps {
         script {
-          sh "ls"
+          sh "docker-compose -f Jenkins/docker/mysql/docker-compose.yaml up -d"
         }
       }
     }
