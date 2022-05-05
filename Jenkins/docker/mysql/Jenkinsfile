@@ -4,8 +4,7 @@ pipeline {
     stage ('Ubicar los archivos para construir los contenedores') {
       steps {
         script {
-          sh "cd Jenkins/docker/mysql"
-          sh "ls"
+          sh "ls Jenkins/docker/mysql"
         }
       }
     }
