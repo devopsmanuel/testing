@@ -5,6 +5,7 @@ pipeline {
       steps {
         script {
           sh "cd Jenkins/docker/mysql"
+          sh "ls"
         }
       }
     }
