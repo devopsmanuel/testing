@@ -2,8 +2,8 @@ pipeline {
   agent any
   stages {
     stage ('docker compose version') {
-      steps {
-        sh "docker compose version"
+      dir("folder") {
+        sh "docker compose up -d"
       }
     }
   }
