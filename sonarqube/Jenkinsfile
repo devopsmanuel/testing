@@ -2,8 +2,10 @@ pipeline {
   agent any
   stages {
     stage ('docker compose version') {
-      dir("sonarqube") {
-        sh "docker compose up -d"
+      steps {
+        dir("sonarqube") {
+          sh "docker compose up -d"
+        }
       }
     }
   }
